@@ -14,7 +14,6 @@
 				@props.handleDeleteRecord @props.record
 	handleEdit: (e) ->
 		e.preventDefault()
-		debugger
 		data =
 			title: ReactDOM.findDOMNode(@refs.title).value
 			date: ReactDOM.findDOMNode(@refs.date).value

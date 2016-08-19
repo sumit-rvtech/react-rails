@@ -11,12 +11,6 @@
 		name = e.target.name
 		@setState "#{ name }": e.target.value
 
-	handleDate: (e) ->
-		name = e.target.name
-		debugger
-		@setState "#{ name }": new Date();
-
-
 	handleSubmit: (e) ->
 		e.preventDefault()
 		$.post '', { record: @state }, (data) =>
@@ -37,7 +31,6 @@
 					name: 'date'
 					value: @state.date
 					onChange: @handleChange
-					onClick: @handleDate
 			React.DOM.div
 				className: 'form-group col-xs-3'
 				React.DOM.input
