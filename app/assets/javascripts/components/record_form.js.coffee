@@ -5,7 +5,7 @@
 		amount: ''
 
 	valid: ->
-		@state.title && @state.date && @state.amount
+		@state.title && @state.amount
 
 	handleChange: (e) ->
 		name = e.target.name
@@ -22,15 +22,6 @@
 		React.DOM.form
 			className: 'form-inline'
 			onSubmit: @handleSubmit
-			React.DOM.div
-				className: 'form-group col-xs-3'
-				React.DOM.input
-					type: 'text'
-					className: 'form-control datepicker'
-					placeholder: 'Date'
-					name: 'date'
-					value: @state.date
-					onChange: @handleChange
 			React.DOM.div
 				className: 'form-group col-xs-3'
 				React.DOM.input
