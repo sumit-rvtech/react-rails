@@ -16,7 +16,6 @@
 		e.preventDefault()
 		data =
 			title: ReactDOM.findDOMNode(@refs.title).value
-			date: ReactDOM.findDOMNode(@refs.date).value
 			amount: ReactDOM.findDOMNode(@refs.amount).value
 		$.ajax
 			method: 'PUT'
